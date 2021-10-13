@@ -64,4 +64,35 @@ Click create repository
 ![](media/2021-10-13-12-45-39.png)   
 
 
+# Exercise 3: Create a organization
+
+## Goal
+- create an organization 
+
+## steps
+1. login to your github account account  
+[https://github.com/](https://github.com/)
+2. On the top right side go to your profile and go to **settings**
+![](media/2021-10-13-13-44-43.png)
+3. On the left go to organizations
+![](media/2021-10-13-13-45-20.png)
+4. Select New organization  
+![](media/2021-10-13-13-45-47.png)  
+5. select a Free account
+![](media/2021-10-13-13-46-19.png)  
+6. Set up your organization  
+- organization account name: **superheroes-munnep**
+- Contact email: **patrick.munne@hashicorp.com**
+- This organization belongs to: **My personal account**  
+![](media/2021-10-13-13-48-53.png)  
+7. Complete the setup
+![](media/2021-10-13-13-49-40.png)  
+8. Confirm your login credentials
+9. Now you should have **Your Organizations** under your username on the top right side
+![](media/2021-10-13-13-51-36.png)  
+10. See an overview of your organization
+![](media/2021-10-13-13-52-33.png)  
+11. You have an organization 
+![](media/2021-10-13-13-53-07.png)  
+
 
