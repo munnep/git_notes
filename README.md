@@ -95,4 +95,75 @@ Click create repository
 11. You have an organization 
 ![](media/2021-10-13-13-53-07.png)  
 
+# exercise 4
 
+## Goal
+- create fork repository from avengers main to orgnization superheroes-munnep
+- branch the new fork repostiry to a feature-release using git-cli
+- make changes to the README.md
+- create a merge to the avengers main repository 
+- delete the branch feature-release
+
+## steps
+1. login to your github account account  
+[https://github.com/](https://github.com/)
+2. Go to the repository munnep/avengers main branch
+![](media/2021-10-13-13-59-45.png)  
+3. On the top right side click on **Fork**
+![](media/2021-10-13-14-00-24.png)  
+4. Select **superheroes-munnep**  
+![](media/2021-10-13-14-00-58.png)  
+5. Now we have a new repository called **superheroes-munnep/avengers**
+![](media/2021-10-13-14-02-07.png)  
+6. We need to create a new branch called feature-release
+Click on **main** -> Switch branch -> **feature-release** -> click Create branch - feature-release
+![](media/2021-10-13-14-05-41.png)  
+7. From github get the URL to clone the repository. Click on the Code button to see it
+![](media/2021-10-13-14-08-22.png)  
+8. Go to your terminal and a directory where you want to clone the git repository to your local machine
+9. Clone it with the following command and switch to to feature release
+```
+git clone https://github.com/superheroes-munnep/avengers.git
+cd avengers
+git checkout feature-release
+```
+10. Make some changes to the README.md
+11. Just an example
+```
+[patrick:~/git/avengers] feature-release ± vi README.md 
+[patrick:~/git/avengers] feature-release(+2/-0) 32s ± cat README.md 
+# avengers
+avengers example
+
+We just made this change in the feature release branch
+
+This has been added by a change which was done on a feature-release branch under a fork in a different organization
+```
+12. Add the files to git for change and commit them locally
+```
+git add .
+git commit -am "made a change exercise 4"
+git push
+```
+*note: If you get an error with git push about your account saying you need a personal access token then take the steps described by [this link](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)*
+13. Go back to github and the repository superheroes-munnep/avengers. You should see the change you made under branch feature-release
+![](media/2021-10-13-14-28-51.png)  
+14. Merge superheroes-munnep/avengers branch feature-release to the repository avengers branch main 
+15. klik on pull requests
+![](media/2021-10-13-14-32-27.png)  
+16. click **new pull request**  
+![](media/2021-10-13-14-33-19.png)  
+17. Check that you merge the branch feature release from superheroes-munnep/avengers to munnep/avengers  
+![](media/2021-10-13-14-34-55.png)  
+18. click the **Create pull request**
+![](media/2021-10-13-14-34-55.png)  
+19. give it a correct name and description and click **create pull request**
+![](media/2021-10-13-14-36-37.png)  
+20. Click the **Merge pull request** 
+![](media/2021-10-13-14-37-55.png)  
+21. Click **Confirm Merge**
+![](media/2021-10-13-14-38-27.png)  
+22. Click **delete branch**  
+![](media/2021-10-13-14-38-59.png)  
+23. You should now see your changes on the main branch of the munnep/avengers repository
+![](media/2021-10-13-14-40-01.png)  
