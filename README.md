@@ -8,9 +8,13 @@
 - [Exercise 3: Create a organization](#exercise-3-create-a-organization)
   - [Goal](#goal-2)
   - [steps](#steps-2)
-- [exercise 4](#exercise-4)
+- [exercise 4: Wrong.](#exercise-4-wrong)
+  - [Wrong](#wrong)
   - [Goal](#goal-3)
   - [steps](#steps-3)
+- [exercise 4: retry](#exercise-4-retry)
+  - [Goal](#goal-4)
+  - [steps](#steps-4)
 
 # Git notes
 This documentation describes the exercise for git training
@@ -108,11 +112,14 @@ Click create repository
 11. You have an organization   
 ![](media/2021-10-13-13-53-07.png)  
 
-# exercise 4
+# exercise 4: Wrong. 
+
+## Wrong
+I had to do it from organization to personal and then back to organization. Below I did it the other way around
 
 ## Goal
-- create fork repository from avengers main to orgnization superheroes-munnep
-- branch the new fork repostiry to a feature-release using git-cli
+- create fork repository from avengers main to organization superheroes-munnep
+- branch the new fork repository to a feature-release using git-cli
 - make changes to the README.md
 - create a merge to the avengers main repository 
 - delete the branch feature-release
@@ -180,3 +187,59 @@ git push
 ![](media/2021-10-13-14-38-59.png)  
 23. You should now see your changes on the main branch of the munnep/avengers repository  
 ![](media/2021-10-13-14-40-01.png)  
+
+
+
+
+# exercise 4: retry
+
+## Goal
+- create fork repository from organization superheroes-munnep repository justice-league
+- branch the new fork repository to a feature-release using git-cli
+- make changes to the README.md
+- create a merge to the superheroes-munnep main repository 
+- delete the branch feature-release
+
+## steps
+1. login to your github account account  
+[https://github.com/](https://github.com/)
+2. New repository  
+![](media/2021-10-13-16-23-01.png)  
+3. fork to myself as a developer
+![](media/2021-10-13-16-24-14.png)  
+4. create a feature release branch
+![](media/2021-10-13-16-25-13.png)  
+5. use local git commands
+- clone to local repository
+```
+git clone https://github.com/munnep/justice-league.git
+```
+- go to directory
+```
+cd justice-league
+```
+- switch to branch feature-release
+```
+git checkout feature-release
+```
+- add the changes
+```
+git add .
+```
+- commit the changes
+```
+git commit -am "changes made"
+```
+- push the changes
+```
+git push 
+```
+- changes should be visable in the UI
+6. Merge it back to the organization repository
+7. make a new pull request
+![](media/2021-10-13-16-36-46.png)  
+8. create the pull request
+![](media/2021-10-13-16-37-26.png)  
+9. Describe it completely
+10. Merge the pull request
+![](media/2021-10-13-16-38-59.png)
